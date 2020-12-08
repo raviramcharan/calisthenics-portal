@@ -1,0 +1,351 @@
+$primary-color: crimson
+$accent-color: crimson
+$light-color: #F0F0F0
+
+html, body
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+    font-family: Calibri, 'Trebuchet MS', sans-serif
+    font-size: 14px
+
+p
+    font-family: Calibri, 'Trebuchet MS', sans-serif
+//Navigation menu
+nav
+    width: 100%
+    background: white
+    height: 65px
+    border-bottom: 2px solid rgba(43,99,143, 0.5)
+    z-index: 10
+
+nav ul
+    display: flex
+    justify-content: flex-end
+    height: 65px
+    margin: 0 auto
+    padding: 0
+    text-decoration: none
+    @media (max-width: 1168px)
+        display: block
+
+    li
+        list-style: none
+        text-decoration: none
+        position: relative
+        padding: 20px 24px
+        box-sizing: border-box
+        border-right: 1px solid rgba(43,99,143, 0.5)
+        line-height: 1.5
+        @media (max-width: 1170px)
+            border-right: none
+        i
+            margin-right: 5px
+        @media (max-width: 1168px)
+            display: block
+            height: auto
+        &:nth-of-type(1)
+            padding: 0px
+            position: absolute
+            left: 0
+            margin-left: 12px
+            margin-top: 7px
+            border: 0
+            @media (max-width: 1168px)
+                position: relative
+
+        a
+            text-decoration: none
+            color: $primary-color
+
+nav ul li:nth-of-type(2)
+    border-left: 1px solid rgba(43,99,143,0.5)
+    @media (max-width: 1205px)
+        border-left: none
+
+nav ul li:nth-of-type(7)
+    border-right: none
+
+.nav-logo
+    font-size: 16px
+
+.cali-logo
+    height: 48px
+    padding: 0
+    margin: 0
+
+.dropdown
+    padding-left: 70px
+
+.nav-profile
+    // vertical-align: middle
+    position: absolute
+    top: 18%
+    left: 5%
+    border-radius: 50%
+    height: 60%
+    @media (max-width: 1168px)
+        left: 2%
+
+.nav-picture img
+    border-radius: 50%
+    height: 60%
+
+.drop-menu
+    position: absolute
+    background: $light-color
+    top: 70px
+    display: block
+    left: 0
+    transition: 0.5s
+    height: auto
+    opacity: 0
+    visibility: hidden
+    font-family: Calibri, 'Trebuchet MS', sans-serif
+    font-weight: bold
+    color: #000
+    width: 100%
+    box-shadow: 0px 1px 2px 2px rgba(0,0,0,0.5)
+    z-index: 100
+    @media (max-width: 1168px)
+        width: 100%
+        z-index: 100
+    li
+        border-right: none
+        color: black
+        border-bottom: 1px solid black
+        &:first-child
+            position: relative
+            // left: 10px
+            padding: 20px 24px
+            margin: 0
+            border-bottom: 1px solid black
+
+        &:last-child
+            border-right: none
+            border-bottom: none
+    a
+        color: black
+nav ul li:hover .drop-menu
+    opacity: 1
+    visibility: visible
+
+.notify
+    background: black
+    border-radius: 50%
+    color: white
+    position: relative
+    width: 14px
+    height: 14px
+    font-size: 11px
+    text-align: center
+    top: -100%
+    left: 10%
+    @media (max-width: 1168px)
+        left: 8px
+        top: -23px
+
+//Header
+.header
+    background: url(../images/background.jpg)
+    background-position: center
+    height: 475px
+    border-bottom: 32px solid $accent-color
+    @media (max-width: 1168px)
+        margin-top: 350px
+    h2
+        margin-top: 0
+    &__menu
+        background: white
+        height: 228px
+        width: 1242px
+        position: relative
+        top: 74px
+        margin: auto
+        // top: 74px
+        // left: 50%
+        // transform: translate(-50%,-50%)
+        border-top: 6px solid  $accent-color
+        z-index: 0
+        box-shadow: 4px 7px 35px -8px rgba(0,0,0,0.75);
+        @media (max-width: 1268px)
+            width: 80%
+            height: 350px
+        @media (max-width: 721px)
+            height: 600px
+        h2
+            margin-left: 26px
+            margin-top: 21px
+        &__item
+            display: flex
+            justify-content: space-evenly
+            flex-wrap: wrap
+            text-align: center
+            align-items: flex-end
+            z-index: 0
+            @media (max-width: 1268px)
+                justify-content: space-evenly
+                margin-bottom: 20px
+
+            &__block
+                background: $primary-color
+                color: white
+                width: 282px
+                height: 110px
+                display: flex
+                justify-content: center
+                flex-direction: column
+                z-index: 0
+                box-sizing: border-box
+                cursor: pointer
+                @media (max-width: 1268px)
+                    margin-bottom: 20px
+                &:hover
+                    background: white
+                    color: $primary-color
+                    border: 1px solid $primary-color
+                    padding: 0
+                    transition: 0.5s
+                .fa
+                    font-size: 1.5rem
+                    color: $primary-color
+                    background: white
+                    padding: 0.5rem
+                    border-radius: 0.5rem
+                    margin-bottom: 7px
+                    &:hover
+                        color: white
+                        background: $primary-color
+
+.item-header i
+    margin-right: 10px
+
+    //Content
+.content
+    background: white
+    width: 1242px
+    position: relative
+    left: 50%
+    margin-top: -118px
+    transform: translate(-50%,0%)
+    box-shadow: 4px 7px 35px -8px rgba(0,0,0,0.75);
+    margin-bottom: 5rem
+    padding-bottom: 50px
+    @media (max-width: 1268px)
+        width: 80%
+        margin-top: 50px
+    @media (max-width: 721px)
+        margin-top: 200px
+    @media (max-width: 1268px)
+        width: 100vw
+
+    .breadcrumb
+        padding-top: 18px
+        margin-left: 37px
+        margin-bottom: 19px
+        @media (max-width: 1270px)
+            margin-left: 65px
+        @media (max-width: 1268px)
+            // margin-left: 50px
+            width: 90%
+            margin: auto
+
+        &-active
+            text-decoration: underline
+    &-container
+        padding-left: 0px
+        margin: 0
+        margin--left: 53px
+        display: flex
+        flex-wrap: wrap
+        box-sizing: border-box
+        justify-content: center
+
+        &-item
+
+            &:first-child
+                margin-right: 34px
+    .first
+        width: 616px
+        @media (max-width: 1270px)
+            width: 90%
+            margin: auto
+    .second
+        width: 521px
+        @media (max-width: 1270px)
+            width: 90%
+            margin: auto
+.item-header
+    background: #222222
+    color: white
+    padding: 1rem
+    font-family: Calibri, 'Trebuchet MS', sans-serif
+    font-weight: bold
+    font-size: 20px
+
+.profile-line
+    background: $light-color
+    height: 64px
+    margin-bottom: 3px
+    width: 100%
+    line-height: 64px
+    display: flex
+    flex-direction: row
+    align-items: center
+    img
+        vertical-align: middle
+        border-radius: 50%
+        margin-right: 1rem
+        margin-left: 1rem
+        width: 32px
+        justify-self: flex-start
+        // padding-top: 0.5rem
+    i
+        float: right
+        margin-top: 24px
+        margin-right: 1rem
+    p
+        margin: auto
+        width: 100%
+        
+    .fa-user-times
+        color: #f78282
+    .fa-user-plus
+        color: gray
+
+.search
+    height: 5rem
+    background: $light-color
+    margin-bottom: 1rem
+    display: flex
+    input
+        margin: 1rem auto
+        width: 90%
+        border: 0
+        text-decoration: none
+        height: 2rem
+        box-sizing: border-box
+        padding-left: 1rem
+        // border: 1px solid gray 
+        border-radius: 2px
+
+.buddy-text
+    background: $light-color
+    margin-top: 0
+    p
+        padding: 22px
+        margin-top: 0
+        font-family: Calibri, 'Trebuchet MS', sans-serif
+        font-size: 16px
+
+.buddy-following
+    background: $light-color
+    height: 200px
+    padding: 22px
+    font-family: Calibri, 'Trebuchet MS', sans-serif
+    font-size: 16px
+    @media (max-width: 1270px)
+        margin-bottom: 25px
+
+.leden
+    margin-top: 25px

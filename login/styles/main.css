@@ -1,0 +1,277 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 14px;
+}
+
+.bg-container {
+  height: 100vh;
+  background-image: url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+@media (max-width: 960px) {
+  .bg-container {
+    margin: 0;
+    height: 1200px;
+  }
+}
+
+.card-container {
+  width: 829px;
+  height: 577px;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 960px) {
+  .card-container {
+    align-items: center;
+    width: 408px;
+    height: 1186px;
+  }
+}
+
+@media (max-width: 420px) {
+  .card-container {
+    width: 90%;
+  }
+}
+
+.card-container-item {
+  color: #000000;
+  background: #FFF;
+  width: 408px;
+  height: 577px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.logo-block {
+  width: 161px;
+  height: 161px;
+  background: #000;
+  margin: auto;
+  position: relative;
+  border-radius: 50%;
+  margin-top: 55px;
+}
+
+@media (max-width: 320px) {
+  .logo-block {
+    position: absolute;
+    right: 50%;
+    transform: translate(50%, 0%);
+  }
+}
+
+.logo-block img {
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 320px) {
+  .logo-block div {
+    position: relative;
+  }
+}
+
+.logo-title {
+  margin: 0;
+  padding: 0;
+  font-size: 1.7rem;
+  letter-spacing: -0.025em;
+  text-align: center;
+}
+
+@media (max-width: 320px) {
+  .logo-title {
+    position: absolute;
+    top: 21%;
+    left: 22%;
+    transform: translate(0%, -50%);
+  }
+}
+
+.logo-subtitle {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: right;
+  margin-bottom: 16px;
+  color: #c7c7c7;
+  margin-right: 20px;
+}
+
+@media (max-width: 420px) {
+  .logo-subtitle {
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 320px) {
+  .logo-subtitle {
+    position: absolute;
+    top: 22.5%;
+    left: 41%;
+    transform: translate(0%, -50%);
+  }
+}
+
+.logo-container {
+  height: 50%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.inlog-container {
+  height: 50%;
+  width: 345px;
+}
+
+@media (max-width: 960px) {
+  .inlog-container {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+.form-container {
+  width: 345px;
+  height: 189px;
+  background: rgba(0, 0, 0, 0.1);
+  margin-top: 26px;
+  border-radius: 10px;
+}
+
+@media (max-width: 960px) {
+  .form-container {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+.form-container form input {
+  width: 75%;
+  color: #222;
+  outline: none;
+  text-decoration: none;
+  border: 0;
+  background: transparent;
+  line-height: 0.02em;
+}
+
+.form-container form input[type=submit] {
+  background: #2B638F;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Calibri, 'Trebuchet MS', sans-serif;
+  width: 100%;
+  height: 46px;
+  border-radius: 5px;
+}
+
+.form-container form label {
+  font-size: 16px;
+  width: 16px;
+  margin-right: 15px;
+}
+
+.form-block {
+  padding: 30px;
+}
+
+.ww-reset {
+  margin-top: 30px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.ww-reset a:visited {
+  color: blue;
+}
+
+hr {
+  margin-top: 16px;
+  margin-bottom: 14px;
+}
+
+.lid-container {
+  height: 47%;
+  border-bottom: 1px solid black;
+  width: 347px;
+}
+
+.lid-container a:visited {
+  color: blue;
+}
+
+@media (max-width: 400px) {
+  .lid-container {
+    width: 90%;
+  }
+}
+
+.proefles-container {
+  height: 50%;
+  width: 347px;
+}
+
+.proefles-container input {
+  margin-top: 14px;
+}
+
+@media (max-width: 400px) {
+  .proefles-container {
+    width: 90%;
+  }
+}
+
+.new-lid {
+  background: #e8e8e8;
+}
+
+.new-lid h3 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.new-lid input[type="submit"] {
+  color: white;
+  background: black;
+  border-radius: 5px;
+}
+
+.new-lid input {
+  outline: none;
+  text-decoration: none;
+  border: 0;
+  width: 284px;
+  height: 46px;
+  font-family: Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@media (max-width: 400px) {
+  .new-lid input {
+    width: 80%;
+  }
+}
